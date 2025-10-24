@@ -1,0 +1,84 @@
+::1 - - [23/Oct/2025 16:31:45] "HEAD /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:32:09] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:32:09] code 404, message File not found
+::1 - - [23/Oct/2025 16:32:09] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:32:11] code 404, message File not found
+::1 - - [23/Oct/2025 16:32:11] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:33:06] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:33:17] "GET /indumathi-madhu/css_styles_Version2.css HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:33:38] "GET /indumathi-madhu/css_styles_Version2.css HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:33:47] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:34:14] "GET /indumathi-madhu/index.html HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:34:14] code 404, message File not found
+::1 - - [23/Oct/2025 16:34:14] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:34:14] "GET /indumathi-madhu/assets/project-6-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:34:14] "GET /indumathi-madhu/assets/project-5-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:34:14] "GET /indumathi-madhu/assets/project-4-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:34:14] "GET /indumathi-madhu/assets/project-7-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:34:14] "GET /indumathi-madhu/assets/project-8-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:35:15] code 404, message File not found
+::1 - - [23/Oct/2025 16:35:15] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:35:18] code 404, message File not found
+::1 - - [23/Oct/2025 16:35:18] "GET /indumathi-madhu/projects.html HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:35:20] code 404, message File not found
+::1 - - [23/Oct/2025 16:35:20] "GET /indumathi-madhu/blog.html HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:35:23] "GET /indumathi-madhu/contact.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:35:31] "GET /indumathi-madhu/css_styles_Version2.css HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:35:44] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:37:40] "GET /indumathi-madhu/index.html HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:37:40] code 404, message File not found
+::1 - - [23/Oct/2025 16:37:40] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:37:40] "GET /indumathi-madhu/assets/project-6-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:37:40] "GET /indumathi-madhu/assets/project-5-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:37:40] "GET /indumathi-madhu/assets/project-4-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:37:40] "GET /indumathi-madhu/assets/project-7-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:37:40] "GET /indumathi-madhu/assets/project-8-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:38:23] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:39:07] code 404, message File not found
+::1 - - [23/Oct/2025 16:39:07] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:39:34] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:39:34] code 404, message File not found
+::1 - - [23/Oct/2025 16:39:34] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:40:25] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:40:25] code 404, message File not found
+::1 - - [23/Oct/2025 16:40:25] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:41:05] "GET /indumathi-madhu/index.html HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:41:05] code 404, message File not found
+::1 - - [23/Oct/2025 16:41:05] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:41:37] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:41:44] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:41:44] code 404, message File not found
+::1 - - [23/Oct/2025 16:41:44] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:41:44] "GET /indumathi-madhu/assets/project-6-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:41:44] "GET /indumathi-madhu/assets/project-8-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:41:44] "GET /indumathi-madhu/assets/project-7-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:41:44] "GET /indumathi-madhu/assets/project-4-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:41:44] "GET /indumathi-madhu/assets/project-5-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:43:09] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:43:28] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:43:28] code 404, message File not found
+::1 - - [23/Oct/2025 16:43:28] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:43:50] "GET /indumathi-madhu/assets/Indumathi_Madhu_Resume.pdf HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:43:54] "GET /indumathi-madhu/assets/Indumathi_Madhu_Resume.pdf HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:45:55] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:46:54] "GET /indumathi-madhu/index.html HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:46:54] code 404, message File not found
+::1 - - [23/Oct/2025 16:46:54] "GET /indumathi-madhu/assets/project-7-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:46:54] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:46:54] "GET /indumathi-madhu/assets/project-6-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:46:54] "GET /indumathi-madhu/assets/project-4-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:46:54] "GET /indumathi-madhu/assets/project-8-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:46:54] "GET /indumathi-madhu/assets/project-5-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:48:36] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:49:10] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:49:10] code 404, message File not found
+::1 - - [23/Oct/2025 16:49:10] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:51:47] "GET /indumathi-madhu/index.html HTTP/1.1" 200 -
+::1 - - [23/Oct/2025 16:53:48] "GET /indumathi-madhu/index.html HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:53:48] code 404, message File not found
+::1 - - [23/Oct/2025 16:53:48] "GET /assets_avatar-placeholder_Version2.svg HTTP/1.1" 404 -
+::1 - - [23/Oct/2025 16:53:48] "GET /indumathi-madhu/assets/project-5-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:53:48] "GET /indumathi-madhu/assets/project-8-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:53:48] "GET /indumathi-madhu/assets/project-4-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:53:48] "GET /indumathi-madhu/assets/project-7-thumb.svg HTTP/1.1" 304 -
+::1 - - [23/Oct/2025 16:53:48] "GET /indumathi-madhu/assets/project-6-thumb.svg HTTP/1.1" 304 -
