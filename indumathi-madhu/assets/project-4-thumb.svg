@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
+  <rect width="100%" height="100%" fill="#092032" rx="8"/>
+  <g fill="#6ea6ff" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="18">
+    <text x="16" y="36">Visual Odometry</text>
+    <text x="16" y="64" font-size="14">LiDAR · CV · Mapping</text>
+  </g>
+</svg>
