@@ -42,6 +42,7 @@ html,body{height:100%}
 html{scroll-behavior:smooth}
 body{
   margin:0;
+  padding:0;
   min-height:100%;
   background:linear-gradient(180deg,var(--bg), #041019 140%);
   color:var(--text);
@@ -53,8 +54,10 @@ body{
 .container{
   width:100%;
   max-width:var(--max-width);
-  margin:0 auto;
-  padding:calc(var(--pad) + 0.2rem);
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:calc(var(--pad) + 0.2rem);
+  padding-right:calc(var(--pad) + 0.2rem);
 }
 
 /* account for fixed header so content isn't hidden under it */
