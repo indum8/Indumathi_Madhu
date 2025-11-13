@@ -194,6 +194,26 @@ body{
 }
 .experience h2::before, #teaching-heading::before{ content:''; position:absolute; left:-14px; top:6px; width:6px; height:6px; background:var(--accent); border-radius:2px }
 
+/* Teaching & Mentoring */
+.teaching-list{ list-style:none; margin:0; padding:0; display:grid; gap:1rem }
+.teaching-item{
+  background: linear-gradient(180deg, rgba(20,28,33,0.55), rgba(16,22,26,0.45));
+  border:1px solid rgba(255,255,255,0.04);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+}
+.teach-row{ display:flex; gap:0.5rem; align-items:baseline; flex-wrap:wrap }
+.teach-role{ font-weight:700; color:var(--text) }
+.teach-sep{ color:var(--muted) }
+.teach-org{ color:var(--muted) }
+.teach-year{ margin-left:auto; color:var(--muted); font-variant-numeric: tabular-nums }
+.teach-bullets{ margin:0.45rem 0 0 0; padding-left:1.1rem }
+.teach-bullets li{ margin:0.18rem 0 }
+
+@media (max-width: 560px){
+  .teach-year{ width:100%; margin-left:0; opacity:0.9 }
+}
+
 /* Prevent fixed header from covering anchor targets */
 h1, h2, h3 { scroll-margin-top: calc(var(--header-height) + 1rem); }
 
