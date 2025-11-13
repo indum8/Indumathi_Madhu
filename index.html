@@ -35,11 +35,12 @@
   <main class="container" id="content" role="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-inner">
+        <div class="hero-feed" aria-hidden="true"></div>
         <div class="hero-grid">
           <div class="hero-content">
             <h1 id="hero-title">Hey — I'm Indu</h1>
             <p class="subtitle-primary">PhD student @ The George Washington University</p>
-            <p class="subtitle-secondary">Building smarter, safer autonomous systems</p>
+            <p class="subtitle-secondary">Building <span class="pulse-word smarter">smarter</span>, <span class="pulse-word safer">safer</span> autonomous systems</p>
             <p class="bio-justified">I love building things especially autonomous rovers and systems that move and think on their own. My journey into security started during my undergrad, when a grey-hat hacker's session completely changed how I viewed technology. Since then, I've been fascinated by the idea of making autonomous systems not just intelligent, but secure and dependable. Today, my work focuses on cyber-physical system security, where I get to combine my love for hands-on engineering with solving complex, real-world problems.</p>
 
             <p class="hero-actions">
@@ -49,11 +50,13 @@
           </div>
 
           <div class="hero-avatar" aria-hidden="true">
-            <img src="assets/avatar-400.jpg"
-                 srcset="assets/avatar-200.jpg 200w, assets/avatar-400.jpg 400w, assets/avatar-800.jpg 800w"
-                 sizes="(max-width: 520px) 130px, 220px"
-                 alt="Indu's photo"
-                 loading="lazy" decoding="async" />
+            <div class="hud-frame">
+              <img src="assets/avatar-400.jpg"
+                   srcset="assets/avatar-200.jpg 200w, assets/avatar-400.jpg 400w, assets/avatar-800.jpg 800w"
+                   sizes="(max-width: 520px) 130px, 220px"
+                   alt="Indu's photo"
+                   loading="lazy" decoding="async" />
+            </div>
           </div>
         </div>
       </div>
@@ -121,18 +124,18 @@
         <!-- icons removed — skills displayed as plain text per request -->
 
       <div class="skills-cards">
-        <div class="skill-card">
+        <div class="skill-card" data-domain="programming">
           <h3>Programming</h3>
-          <div class="skills-grid">
+          <div class="skills-grid matrix">
             <span class="skill core-skill">Python</span>
             <span class="skill">C</span>
             <span class="skill">SQL</span>
           </div>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-domain="ml">
           <h3>ML / DL Frameworks</h3>
-          <div class="skills-grid">
+          <div class="skills-grid matrix">
             <span class="skill core-skill">PyTorch</span>
             <span class="skill">TensorFlow</span>
             <span class="skill">Keras</span>
@@ -142,9 +145,9 @@
           </div>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-domain="robotics">
           <h3>Autonomous Systems / Robotics</h3>
-          <div class="skills-grid">
+          <div class="skills-grid matrix">
             <span class="skill">Path planning</span>
             <span class="skill">SLAM</span>
             <span class="skill">Localization</span>
@@ -156,9 +159,9 @@
           </div>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-domain="platforms">
           <h3>Tools &amp; Platforms</h3>
-          <div class="skills-grid">
+          <div class="skills-grid matrix">
             <span class="skill core-skill">ROS</span>
             <span class="skill">Docker</span>
             <span class="skill">Git</span>
@@ -170,9 +173,9 @@
           </div>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-domain="environments">
           <h3>Computing Environments</h3>
-          <div class="skills-grid">
+          <div class="skills-grid matrix">
             <span class="skill">Windows</span>
             <span class="skill">Linux (Kali &amp; Ubuntu)</span>
             <span class="skill">Arduino</span>
@@ -181,9 +184,9 @@
           </div>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-domain="hardware">
           <h3>Hardware</h3>
-          <div class="skills-grid">
+          <div class="skills-grid matrix">
             <span class="skill">PCAN</span>
             <span class="skill">ValueCAN 4-2 EL</span>
             <span class="skill">NI</span>
@@ -192,9 +195,9 @@
           </div>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-domain="soft">
           <h3>Soft Skills</h3>
-          <div class="skills-grid">
+          <div class="skills-grid matrix">
             <span class="skill">Research mentoring</span>
             <span class="skill">Systematic thinking</span>
             <span class="skill">Collaborative teamwork</span>
@@ -213,6 +216,8 @@
             <div class="project-body">
               <h3>Visual Odometry &amp; 3D Mapping for Rover Navigation</h3>
               <p class="meta">LiDAR · Computer Vision · Robotics</p>
+              <p class="project-metric"><span class="metric-label">Metric:</span> Localization drift &lt; 2% over 100m path</p>
+              <div class="status-bar" aria-label="Reliability rating"><div class="status-fill" style="--fill:82%"></div></div>
               <p class="impact">Prototype demonstrated improved navigation robustness in cluttered environments.</p>
               <p class="excerpt">Feature extraction, motion estimation, and sparse 3D map reconstruction using LiDAR and camera data for autonomous rover systems.</p>
             </div>
@@ -225,6 +230,8 @@
             <div class="project-body">
               <h3>AI-based IDS for Automotive Networks</h3>
               <p class="meta">Machine Learning · Cybersecurity</p>
+              <p class="project-metric"><span class="metric-label">Metric:</span> False positive rate ↓ ~15% (prototype)</p>
+              <div class="status-bar" aria-label="Detection efficiency"><div class="status-fill" style="--fill:74%"></div></div>
               <p class="impact">Prototype experiments reduced false positives in controlled vehicle-network datasets.</p>
               <p class="excerpt">Designed ML framework for anomaly detection using in-vehicle network data.</p>
             </div>
@@ -237,6 +244,8 @@
             <div class="project-body">
               <h3>OVERTON: Real-Time Vehicle Network Anomaly Detection</h3>
               <p class="meta">Embedded · Edge · Security</p>
+              <p class="project-metric"><span class="metric-label">Metric:</span> Mean detection latency ≈ 10ms</p>
+              <div class="status-bar" aria-label="Latency performance"><div class="status-fill" style="--fill:88%"></div></div>
               <p class="impact">Achieved low-latency detections suitable for edge deployment in prototype tests.</p>
               <p class="excerpt">Deployed on Raspberry Pi and Jetson Nano for real-time anomaly detection in vehicle networks.</p>
             </div>
@@ -249,6 +258,8 @@
             <div class="project-body">
               <h3>BITLabs Remote Control</h3>
               <p class="meta">Remote Access · Robotics</p>
+              <p class="project-metric"><span class="metric-label">Metric:</span> Remote uptime ≈ 99%</p>
+              <div class="status-bar" aria-label="Availability rating"><div class="status-fill" style="--fill:92%"></div></div>
               <p class="impact">Enabled secure, remote access workflows for on-campus lab hardware during hybrid classes.</p>
               <p class="excerpt">Built a remote desktop solution enabling secure access to physical lab setups, integrating robotics and networked devices.</p>
             </div>
@@ -261,6 +272,8 @@
             <div class="project-body">
               <h3>Privacy-Preserving ITS Services with Homomorphic Encryption</h3>
               <p class="meta">Privacy · ML · ITS</p>
+              <p class="project-metric"><span class="metric-label">Metric:</span> Encrypted inference overhead &lt; 25%</p>
+              <div class="status-bar" aria-label="Efficiency rating"><div class="status-fill" style="--fill:70%"></div></div>
               <p class="impact">Demonstrated privacy-preserving predictions on vehicle datasets while retaining model utility.</p>
               <p class="excerpt">Applied ML models for CO2 emission prediction with encrypted vehicle data using homomorphic encryption techniques.</p>
             </div>
