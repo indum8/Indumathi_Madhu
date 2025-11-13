@@ -136,14 +136,20 @@ body{
   background-size: 160px auto;
 }
 .hero-inner{max-width:100ch}
-.hero-grid{ display:grid; grid-template-columns: 1fr 260px; gap:1.6rem; align-items:center }
+.hero-grid{ display:grid; grid-template-columns: 260px 1fr; gap:1.6rem; align-items:center }
 .hero-content{ min-width:0 }
 .hero h1{margin:0 0 0.4rem 0; font-size:clamp(1.6rem, 3vw, 2.4rem)}
-.hero-avatar{ display:flex; justify-content:center; align-items:center; margin-bottom:0.9rem }
-.hero-avatar img{ width:220px; height:220px; max-width:100%; object-fit:cover; border-radius:999px; border:3px solid rgba(255,255,255,0.04); box-shadow:0 20px 54px rgba(0,0,0,0.6); transform: translate(12px, 8px) }
+.hero-avatar{ display:flex; justify-content:flex-start; align-items:center; margin-bottom:0.9rem }
+.hero-avatar img{ width:220px; height:220px; max-width:100%; object-fit:cover; border-radius:999px; border:3px solid rgba(255,255,255,0.04); box-shadow:0 20px 54px rgba(0,0,0,0.6); transform: translate(0, 8px) }
 
 @media (max-width:520px){
   .hero-avatar img{ width:130px; height:130px; transform: translateY(6px) }
+
+/* Place avatar on the left, content on the right for larger screens */
+@media (min-width: 700px){
+  .hero-content{ grid-column: 2 }
+  .hero-avatar{ grid-column: 1 }
+}
 }
 .skill {
   display: inline-flex;
