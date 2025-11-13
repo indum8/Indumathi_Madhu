@@ -185,12 +185,13 @@ body{
 }
 
 /* Section headings */
-.experience h2, .skills h2, .featured h2, .education h2, #teaching-heading{ 
-  font-size:1.05rem; 
-  margin-bottom:0.75rem; 
+.experience h2, .skills h2, .featured h2, .education h2, #teaching-heading{
+  font-size:1.2rem;
+  margin:0 0 0.9rem 0;
   color:var(--text);
   display:inline-block;
   position:relative;
+  text-wrap:balance;
 }
 .experience h2::before, #teaching-heading::before{ content:''; position:absolute; left:-14px; top:6px; width:6px; height:6px; background:var(--accent); border-radius:2px }
 
@@ -244,7 +245,7 @@ h1, h2, h3 { scroll-margin-top: calc(var(--header-height) + 1rem); }
   border-radius:8px;
   text-decoration:none;
   cursor:pointer;
-  border:1px solid rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.06);
   background:transparent;
   color:var(--text);
   transition:var(--transition);
@@ -257,6 +258,7 @@ h1, h2, h3 { scroll-margin-top: calc(var(--header-height) + 1rem); }
 }
 .btn:focus{outline:var(--focus-ring)}
 .btn.primary:hover{ transform: translateY(-3px) scale(1.01); }
+.btn:not(.primary):hover{ background:linear-gradient(90deg, rgba(110,166,255,0.06), rgba(90,139,255,0.04)); transform: translateY(-2px) }
 
 /* Projects grid */
 .projects-grid{
@@ -268,13 +270,13 @@ h1, h2, h3 { scroll-margin-top: calc(var(--header-height) + 1rem); }
 .projects-grid.full{grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));}
 
 .project-card{
-  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(3,7,10,0.06));
-  border:1px solid rgba(255,255,255,0.02);
-  border-radius:calc(var(--radius) + 4px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(3,7,10,0.07));
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius:16px;
   overflow:hidden;
-  transition:transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms cubic-bezier(.2,.9,.2,1);
+  transition:transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms cubic-bezier(.2,.9,.2,1), border-color 220ms ease;
 }
-.project-card:hover{ transform: translateY(-8px); box-shadow: 0 18px 48px rgba(6,12,20,0.6); }
+.project-card:hover{ transform: translateY(-6px); box-shadow: 0 18px 48px rgba(6,12,20,0.55); border-color: rgba(110,166,255,0.25) }
 .project-link{ display:block; text-decoration:none; color:inherit; padding:1rem; }
 
 /* Remove image column for featured cards — make content-only card layout */
@@ -294,8 +296,8 @@ h1, h2, h3 { scroll-margin-top: calc(var(--header-height) + 1rem); }
   justify-content:center;
 }
 .project-thumb img{ width:100%; height:100%; object-fit:cover; display:block }
-.project-body h3{margin:0 0 0.2rem 0}
-.meta{color:var(--muted); font-size:0.9rem; margin:0 0 0.6rem 0}
+.project-body h3{margin:0 0 0.3rem 0; font-size:1.12rem}
+.meta{color:var(--muted); font-size:0.92rem; margin:0 0 0.55rem 0; letter-spacing:0.15px}
 .excerpt{color:var(--muted); margin:0; /* clamp to 3 lines */
   display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; line-clamp:3;
 }
@@ -473,7 +475,8 @@ h1, h2, h3 { scroll-margin-top: calc(var(--header-height) + 1rem); }
 .skill-card{ background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.03)); border:1px solid rgba(255,255,255,0.03); padding:0.9rem; border-radius:12px; box-shadow: 0 8px 20px rgba(0,0,0,0.35); }
 .skill-card h3{ margin:0 0 0.6rem 0; font-size:1rem }
 .skills-grid{ display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center }
-.skill{ display:inline-flex; align-items:center; gap:0.45rem; padding:0.35rem 0.6rem; border-radius:999px; background: rgba(255,255,255,0.02); color:var(--text); font-weight:600; border:1px solid rgba(255,255,255,0.03); font-size:0.9rem }
+.skill{ display:inline-flex; align-items:center; gap:0.45rem; padding:0.32rem 0.6rem; border-radius:999px; background: rgba(255,255,255,0.03); color:var(--text); font-weight:500; border:1px solid rgba(255,255,255,0.06); font-size:0.92rem }
+.skill:hover{ background:linear-gradient(90deg, rgba(110,166,255,0.06), rgba(90,139,255,0.04)); border-color: rgba(110,166,255,0.22) }
 
 @media (max-width:720px){
   .skills-grid{ justify-content:flex-start }
