@@ -43,6 +43,8 @@ body{
   color:var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+  /* Custom technical caret cursor */
+  cursor: url('assets/cursor-caret.svg'), auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -181,6 +183,17 @@ section {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(20, 184, 166, 0.15);
   outline:none;
+}
+
+/* Interactive cursor changes for clickable/interactive regions */
+a, button, .timeline-item, .project-card {
+  cursor: url('assets/cursor-target.svg'), pointer;
+}
+
+/* Scan glow when active (added via JS) */
+.active-scan {
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.55), 0 0 6px rgba(20, 184, 166, 0.3);
+  transition: box-shadow 240ms ease-out;
 }
 
 /* Hero */

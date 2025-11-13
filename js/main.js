@@ -116,3 +116,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { passive: true });
   });
 });
+
+// Interactive scan glow: highlight project cards & timeline items under cursor
+document.addEventListener('DOMContentLoaded', () => {
+  const scanItems = document.querySelectorAll('.project-card, .timeline-item');
+  if (!scanItems.length) return;
+
+  scanItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      item.classList.add('active-scan');
+    });
+    item.addEventListener('mouseleave', () => {
+      item.classList.remove('active-scan');
+    });
+    // Keyboard accessibility: apply on focus for focusable descendants
+    item.addEventListener('focusin', () => {
+      item.classList.add('active-scan');
+    });
+    item.addEventListener('focusout', () => {
+      item.classList.remove('active-scan');
+    });
+  });
+});
