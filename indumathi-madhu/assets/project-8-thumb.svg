@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180">
-  <rect width="100%" height="100%" fill="#041018" rx="8"/>
-  <g fill="#ffd6e0" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="18">
-    <text x="16" y="36">Privacy-Preserving ITS</text>
-    <text x="16" y="64" font-size="14">Homomorphic Encryption</text>
-  </g>
-</svg>
