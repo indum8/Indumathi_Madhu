@@ -138,3 +138,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Skills tabs interaction
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.skills-tab');
+  const panels = document.querySelectorAll('[data-skill-panel]');
+  if (!tabs.length) return;
+
+  function activate(domain){
+    tabs.forEach(t => {
+      const isMatch = t.getAttribute('data-skill-tab') === domain;
+      t.classList.toggle('is-active', isMatch);
+      t.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+    });
+    panels.forEach(p => {
+      const match = p.getAttribute('data-skill-panel') === domain;
+      if (match){ p.removeAttribute('hidden'); p.setAttribute('aria-hidden','false'); }
+      else { p.setAttribute('hidden',''); p.setAttribute('aria-hidden','true'); }
+    });
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      activate(tab.getAttribute('data-skill-tab'));
+    });
+    tab.addEventListener('keydown', (e) => {
+      // simple arrow navigation among tabs
+      if (!['ArrowRight','ArrowLeft'].includes(e.key)) return;
+      e.preventDefault();
+      const order = Array.from(tabs);
+      const idx = order.indexOf(tab);
+      const nextIdx = e.key === 'ArrowRight' ? (idx + 1) % order.length : (idx - 1 + order.length) % order.length;
+      order[nextIdx].focus();
+    });
+  });
+
+  // initial activation
+  activate('programming');
+});

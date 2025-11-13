@@ -49,6 +49,15 @@
             </p>
           </div>
 
+          <aside class="hero-stats" aria-label="Core competencies">
+            <h2 class="stats-heading">Core Focus</h2>
+            <ul class="stats-list" role="list">
+              <li class="stat-item"><span class="stat-badge">Python</span></li>
+              <li class="stat-item"><span class="stat-badge">ROS</span></li>
+              <li class="stat-item"><span class="stat-badge">V2X Security</span></li>
+            </ul>
+          </aside>
+
           <div class="hero-avatar" aria-hidden="true">
             <div class="hud-frame">
               <img src="assets/avatar-400.jpg"
@@ -118,13 +127,24 @@
     </section>
 
     <section class="skills" aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Skills</h2>
-      <p class="lead">A selection of technologies and areas I work with.</p>
+      <div class="skills-header">
+        <h2 id="skills-heading">Skills</h2>
+        <nav class="skills-tabs" aria-label="Skill category tabs">
+          <button type="button" class="skills-tab is-active" data-skill-tab="programming" aria-selected="true">Programming</button>
+          <button type="button" class="skills-tab" data-skill-tab="ml" aria-selected="false">ML / DL</button>
+          <button type="button" class="skills-tab" data-skill-tab="robotics" aria-selected="false">Autonomous</button>
+          <button type="button" class="skills-tab" data-skill-tab="platforms" aria-selected="false">Platforms</button>
+          <button type="button" class="skills-tab" data-skill-tab="environments" aria-selected="false">Environments</button>
+          <button type="button" class="skills-tab" data-skill-tab="hardware" aria-selected="false">Hardware</button>
+          <button type="button" class="skills-tab" data-skill-tab="soft" aria-selected="false">Soft</button>
+        </nav>
+      </div>
+      <p class="lead">Interactive matrix. Choose a category to focus.</p>
 
         <!-- icons removed — skills displayed as plain text per request -->
 
       <div class="skills-cards">
-        <div class="skill-card" data-domain="programming">
+        <div class="skill-card" data-domain="programming" data-skill-panel="programming">
           <h3>Programming</h3>
           <div class="skills-grid matrix">
             <span class="skill core-skill">Python</span>
@@ -133,7 +153,7 @@
           </div>
         </div>
 
-        <div class="skill-card" data-domain="ml">
+        <div class="skill-card" data-domain="ml" data-skill-panel="ml" hidden>
           <h3>ML / DL Frameworks</h3>
           <div class="skills-grid matrix">
             <span class="skill core-skill">PyTorch</span>
@@ -145,7 +165,7 @@
           </div>
         </div>
 
-        <div class="skill-card" data-domain="robotics">
+        <div class="skill-card" data-domain="robotics" data-skill-panel="robotics" hidden>
           <h3>Autonomous Systems / Robotics</h3>
           <div class="skills-grid matrix">
             <span class="skill">Path planning</span>
@@ -159,7 +179,7 @@
           </div>
         </div>
 
-        <div class="skill-card" data-domain="platforms">
+        <div class="skill-card" data-domain="platforms" data-skill-panel="platforms" hidden>
           <h3>Tools &amp; Platforms</h3>
           <div class="skills-grid matrix">
             <span class="skill core-skill">ROS</span>
@@ -173,7 +193,7 @@
           </div>
         </div>
 
-        <div class="skill-card" data-domain="environments">
+        <div class="skill-card" data-domain="environments" data-skill-panel="environments" hidden>
           <h3>Computing Environments</h3>
           <div class="skills-grid matrix">
             <span class="skill">Windows</span>
@@ -184,7 +204,7 @@
           </div>
         </div>
 
-        <div class="skill-card" data-domain="hardware">
+        <div class="skill-card" data-domain="hardware" data-skill-panel="hardware" hidden>
           <h3>Hardware</h3>
           <div class="skills-grid matrix">
             <span class="skill">PCAN</span>
@@ -195,7 +215,7 @@
           </div>
         </div>
 
-        <div class="skill-card" data-domain="soft">
+        <div class="skill-card" data-domain="soft" data-skill-panel="soft" hidden>
           <h3>Soft Skills</h3>
           <div class="skills-grid matrix">
             <span class="skill">Research mentoring</span>
