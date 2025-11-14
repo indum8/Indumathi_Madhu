@@ -14,15 +14,6 @@
   --accent-2: #0d9488;
   --accent-3: #0f766e;
   --accent-glow: rgba(20, 184, 166, 0.15);
-  /* Domain color accents */
-  --color-programming: #6366f1;
-  --color-ml: #f59e0b;
-  --color-robotics: #0ea5e9;
-  --color-platforms: #10b981;
-  --color-environments: #84cc16;
-  --color-hardware: #ec4899;
-  --color-soft: #8b5cf6;
-  --color-security: #ef4444;
   --header-height: 64px;
   --radius: 12px;
   --max-width: 960px;
@@ -217,51 +208,7 @@ a, button, .timeline-item, .project-card {
   transform: translate(0, 4px) scale(1.02);
 }
 
-/* Live data feed overlay */
-.hero-feed {
-
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  opacity:0.18;
-  background:
-    repeating-linear-gradient(to bottom, rgba(20,184,166,0.06) 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to right, rgba(96,165,250,0.05) 0 3px, transparent 3px 6px);
-  mix-blend-mode:screen;
-  animation: feedScroll 18s linear infinite;
-}
-@keyframes feedScroll { to { background-position: 0 240px, 0 0; } }
-
-/* Dynamic headline pulse words */
-.pulse-word { display:inline-block; position:relative; animation: pulseWord 4s ease-in-out infinite; }
-.pulse-word.safer { animation-delay:2s; }
-@keyframes pulseWord {
-  0%,90% { transform:none; text-shadow:none; }
-  45% { transform:scale(1.06); text-shadow:0 0 12px rgba(20,184,166,0.55), 0 0 20px rgba(96,165,250,0.4); }
-}
-
-/* HUD frame around avatar */
-.hud-frame { position:relative; display:inline-block; }
-.hud-frame::before {
-  content:'';
-  position:absolute;
-  inset:-14px;
-  border:1px solid rgba(20,184,166,0.35);
-  border-radius:24px;
-  backdrop-filter:blur(2px);
-  pointer-events:none;
-}
-.hud-frame::after {
-  content:'';
-  position:absolute;
-  inset:-4px;
-  border:1px dashed rgba(96,165,250,0.35);
-  border-radius:999px;
-  animation: hudRotate 12s linear infinite;
-  pointer-events:none;
-}
-@keyframes hudRotate { to { transform: rotate(360deg); } }
-.hud-frame img { position:relative; z-index:1; }
+/* Removed hero feed overlay, pulse words, and HUD frame (reverted) */
 
 @media (max-width:520px){
   .hero-avatar img{ width:110px; height:110px; transform: translateY(4px) }
@@ -536,14 +483,7 @@ h1, h2, h3 { scroll-margin-top: calc(var(--header-height) + 1rem); }
 .impact{ margin:0.25rem 0 0.45rem 0; color:var(--muted); font-weight:600; font-size:0.95rem }
 
 /* Project metric & status bars */
-.project-metric{ margin:0 0 0.4rem 0; font-size:0.7rem; letter-spacing:1px; text-transform:uppercase; color:var(--muted); font-weight:600; display:flex; gap:0.4rem }
-.metric-label{ color:var(--accent); }
-.status-bar{ position:relative; height:6px; background:rgba(20,184,166,0.18); border-radius:4px; overflow:hidden; margin:0 0 0.6rem 0 }
-.status-fill{ position:absolute; left:0; top:0; bottom:0; width:var(--fill); background:
-  linear-gradient(90deg, var(--accent) 0%, #60a5fa 100%),
-  repeating-linear-gradient( 45deg, rgba(255,255,255,0.2) 0 4px, transparent 4px 8px);
-  animation: statusScan 6s linear infinite; filter:brightness(1.05); }
-@keyframes statusScan { 0%{ background-position:0 0,0 0 } 100%{ background-position:0 0, 120px 0 } }
+/* removed project metric/status bars (reverted) */
 
 /* Highlight core skills */
 .core-skill{ color:var(--accent); font-weight:700; background: rgba(20,184,166,0.06); padding:0.15rem 0.45rem; border-radius:6px }
@@ -821,25 +761,6 @@ h1, h2, h3 { scroll-margin-top: calc(var(--header-height) + 1rem); }
   gap:0.6rem; 
   align-items:start; 
   padding:1rem 1.2rem; 
-.skills-grid.matrix { display:grid; grid-template-columns: repeat(auto-fill,minmax(110px,1fr)); }
-.skill-card:hover .skill { transform:scale(1.05); opacity:1; }
-
-/* Domain gradients */
-.skill-card[data-domain=programming] .skill{ background:linear-gradient(135deg, rgba(99,102,241,0.18), rgba(20,184,166,0.06)); border-color:rgba(99,102,241,0.45); }
-.skill-card[data-domain=ml] .skill{ background:linear-gradient(135deg, rgba(245,158,11,0.22), rgba(20,184,166,0.05)); border-color:rgba(245,158,11,0.5); }
-.skill-card[data-domain=robotics] .skill{ background:linear-gradient(135deg, rgba(14,165,233,0.25), rgba(20,184,166,0.05)); border-color:rgba(14,165,233,0.5); }
-.skill-card[data-domain=platforms] .skill{ background:linear-gradient(135deg, rgba(16,185,129,0.25), rgba(20,184,166,0.05)); border-color:rgba(16,185,129,0.5); }
-.skill-card[data-domain=environments] .skill{ background:linear-gradient(135deg, rgba(132,204,22,0.25), rgba(20,184,166,0.05)); border-color:rgba(132,204,22,0.5); }
-.skill-card[data-domain=hardware] .skill{ background:linear-gradient(135deg, rgba(236,72,153,0.28), rgba(20,184,166,0.05)); border-color:rgba(236,72,153,0.55); }
-.skill-card[data-domain=soft] .skill{ background:linear-gradient(135deg, rgba(139,92,246,0.28), rgba(20,184,166,0.05)); border-color:rgba(139,92,246,0.5); }
-
-.skill-card[data-domain=programming] h3{ border-color:rgba(99,102,241,0.5); }
-.skill-card[data-domain=ml] h3{ border-color:rgba(245,158,11,0.6); }
-.skill-card[data-domain=robotics] h3{ border-color:rgba(14,165,233,0.6); }
-.skill-card[data-domain=platforms] h3{ border-color:rgba(16,185,129,0.6); }
-.skill-card[data-domain=environments] h3{ border-color:rgba(132,204,22,0.6); }
-.skill-card[data-domain=hardware] h3{ border-color:rgba(236,72,153,0.6); }
-.skill-card[data-domain=soft] h3{ border-color:rgba(139,92,246,0.6); }
   border-radius:12px; 
   border:1px solid rgba(20, 184, 166, 0.12); 
   background:linear-gradient(135deg, rgba(26, 31, 58, 0.4), rgba(19, 24, 41, 0.3));
